@@ -50,7 +50,7 @@
   color: #d8db2f;
 }
 .info-money h4 {
-  color: white; 
+  color: white;
   font-family: Plus Jakarta Sans;
   font-size: var(--font-sizetext-preset-2);
   font-weight: 700;
@@ -287,4 +287,28 @@
 }
 #btn span {
   display: inline-block;
+}
+#rate {
+  border: none;
+  text-align: center;
+  border-radius: 5px; 
+  color: #333; 
+  font-weight: bold;
+  padding: 3px 5px; 
+  pointer-events: none; 
+}
+#rate:focus {
+  outline: none;
+  border: none;
+}
+
+.icon2 {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 14px;
+}
+
+.month {
+  position: relative;
 }
