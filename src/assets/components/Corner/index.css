@@ -1,0 +1,24 @@
+.wrap {
+  background-color: white   ;
+  padding: 5px;
+  margin: 50px auto;
+  width: 300px;
+  border-radius: 10px;
+}
+.btn{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 5px ;
+    margin-left:5px;
+}
+.res{
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.corner{
+    margin-bottom: 10px;
+}

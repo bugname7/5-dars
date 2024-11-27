@@ -1,0 +1,35 @@
+#passwd{
+width: 100%;
+padding: 5px;
+border: none;
+background-color: rgb(187, 193, 193);
+color: black;
+}
+#passwd:focus{
+    outline: none;
+    border: none;
+    margin-top: 5px ;
+    margin-bottom: 5px;
+}
+#passwd::placeholder{
+    color: black;
+}
+#passwd1{
+width: 100%;
+padding: 5px;
+border: none;
+background-color: rgb(162, 169, 169);
+color: black;
+}
+#passwd1::placeholder{
+    color: black;
+}
+#passwd1:focus{
+    outline: none;
+    border: none;
+    margin-top: 5px ;
+    margin-bottom: 5px;
+}
+.btn{
+    cursor: pointer;
+}
