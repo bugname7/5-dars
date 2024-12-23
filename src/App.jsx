@@ -20,17 +20,18 @@ function App() {
       setToken(newToken);
       localStorage.setItem("token", newToken);
     }
-  }, [location.state?.token]);
+  }, [location.state]);
 
   useEffect(() => {
     if (!localStorage.getItem("token")) {
       setToken(null);
       navigate("/sign");
     }
-  }, []);
+  }, [navigate]);
 
   function Private({ isAuth, children }) {
     if (!isAuth) {
+      navigate("/sign", { replace: true });
       return null;
     }
     return children;
