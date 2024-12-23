@@ -14,7 +14,6 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Tokenni lokatsiyadan olish va saqlash
   useEffect(() => {
     if (location.state?.token) {
       const newToken = location.state.token;
@@ -23,18 +22,16 @@ function App() {
     }
   }, [location.state?.token]);
 
-  // Tokenni tekshirish va yo'naltirish
   useEffect(() => {
     if (!localStorage.getItem("token")) {
       setToken(null);
-      navigate("/sign"); // Sign sahifasiga o'tish
+      navigate("/sign");
     }
   }, []);
 
-  // Xususiy marshrutlarni boshqarish
   function Private({ isAuth, children }) {
     if (!isAuth) {
-      return null; // Token yo'q bo'lsa, sahifa ko'rsatilmaydi
+      return null;
     }
     return children;
   }
